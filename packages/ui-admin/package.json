@@ -4,18 +4,20 @@
   "description": "A simple UI5 CAP Event Application Admin UI",
   "private": true,
   "scripts": {
-    "build": "ui5 build --clean-dest",
+    "build": "ui5 build  --all --clean-dest",
     "start": "ui5 serve --port 8081"
   },
   "devDependencies": {
     "@ui5/cli": "^2.14.2",
     "ui5-middleware-livereload": "^0.6.0",
-    "ui5-middleware-simpleproxy": "^0.9.0"
+    "ui5-middleware-simpleproxy": "^0.9.0",
+    "ui5-cc-excelupload" : "^0.0.11"
   },
   "ui5": {
     "dependencies": [
       "ui5-middleware-simpleproxy",
-      "ui5-middleware-livereload"
+      "ui5-middleware-livereload",
+      "ui5-cc-excelupload"
     ]
   }
 }
